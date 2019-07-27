@@ -22,11 +22,13 @@ class SubClass extends OuterClass{
 
     }
     public static void main(String[] args) {
+        SubClass obj1 = new SubClass();
+        obj1.fun();
 
-        OuterClass obj1 = new SubClass();
+        OuterClass obj2 = new SubClass();
 
         //compiler error as fun() is not accessible
-        // obj1.fun();
+        // obj2.fun();
 
 
     }
