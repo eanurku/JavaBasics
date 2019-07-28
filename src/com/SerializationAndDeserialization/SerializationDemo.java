@@ -26,7 +26,7 @@ class Student implements Serializable{
 public class SerializationDemo {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-        Student sobj = new Student("anurag kumar", 12);
+        Student sobj = new Student("monu kumar", 12);
 
 
         FileOutputStream out=new FileOutputStream("testfile.txt");

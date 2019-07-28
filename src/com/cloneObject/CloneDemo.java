@@ -26,7 +26,7 @@ class Student implements Cloneable {
 public class CloneDemo {
 
     public static void main(String[] args) throws CloneNotSupportedException {
-        Student st = new Student("anurag");
+        Student st = new Student("monu");
         System.out.println(st.getName());
 
         Student cloneObj= (Student) st.clone();
