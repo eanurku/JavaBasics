@@ -12,7 +12,7 @@ public class SimpleDateFormatter {
         System.out.println(date);
 
 
-        SimpleDateFormat formattter = new SimpleDateFormat();
+        SimpleDateFormat formattter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         String dateString = formattter.format(date);
         System.out.println(dateString);
 
