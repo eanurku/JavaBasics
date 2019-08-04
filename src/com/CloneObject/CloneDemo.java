@@ -1,4 +1,4 @@
-package com.cloneObject;
+package com.CloneObject;
 
 
 class Student implements Cloneable {
