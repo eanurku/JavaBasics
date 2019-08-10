@@ -33,8 +33,9 @@ public class ExecutorsWithRunnable {
         });
 
         executor1.shutdown();
-        executor1.awaitTermination(10, TimeUnit.SECONDS);
         System.out.println("shutdown executor");
+        executor1.awaitTermination(10, TimeUnit.SECONDS);//block main thread
+        System.out.println("awaitTermination ..");
 
 
 
