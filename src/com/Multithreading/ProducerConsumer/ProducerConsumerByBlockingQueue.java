@@ -18,15 +18,12 @@ class QProcessor{
 
 
 
-    public void producer() {
+    public void producer() throws InterruptedException {
 
         Random rand =new Random();
         while(true){
-
-            bqueue.add("monu");
-            while(bqueue.size()==this.SIZE){
-                ;
-            }
+            bqueue.put("monu");
+            System.out.println((bqueue.size()==SIZE)?"full":"not full");
         }
     }
 
@@ -47,7 +44,11 @@ public class ProducerConsumerByBlockingQueue {
 
         Thread prod=new Thread(){
             public void run(){
-                proc.producer();
+                try {
+                    proc.producer();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         };
         Thread cons=new Thread(){
