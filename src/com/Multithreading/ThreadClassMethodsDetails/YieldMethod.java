@@ -34,7 +34,7 @@ public class YieldMethod {
         t2.setName("second thread");
         t2.setPriority(4);
         System.out.println("t1 priority:"+t1.getPriority());
-        System.out.println("t1 priority:"+t1.getPriority());
+        System.out.println("t2 priority:"+t2.getPriority());
 
         t1.start();
         t2.start();

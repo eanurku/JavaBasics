@@ -1,6 +1,6 @@
 package com.Exception;
 
-class TestException extends Exception {
+class TestException extends RuntimeException {
 
 }
 

@@ -25,6 +25,7 @@ class SubClass extends OuterClass{
         SubClass obj1 = new SubClass();
         obj1.fun();
 
+
         OuterClass obj2 = new SubClass();
 
         //compiler error as fun() is not accessible
