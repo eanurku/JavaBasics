@@ -2,7 +2,7 @@ package com.PrivateMathodOverriding;
 
 /*
 Private member variables of class A can be accessed (i.e. read/written to) by any method of class A (static or non-static),
-thats why Demo will not comiple but OuterClass will do.
+thats why Demo will not compile but OuterClass will do.
  */
 
 class OuterClass {
